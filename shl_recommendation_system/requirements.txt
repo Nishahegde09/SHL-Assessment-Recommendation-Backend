@@ -1,0 +1,6 @@
+fastapi 
+gradio 
+pandas 
+sentence-transformers 
+torch 
+uvicorn
