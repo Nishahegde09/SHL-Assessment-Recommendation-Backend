@@ -1,3 +1,4 @@
+from flask_cors import CORS
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from model import get_recommendations
@@ -6,7 +7,7 @@ app = FastAPI()
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:3000", "http://127.0.0.1:3000"],
+    allow_origins=["http://localhost:3000", "http://127.0.0.1:3000","https://shl-assessment-recommendation-system-frontend-tq3s.vercel.app"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
